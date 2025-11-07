@@ -7,7 +7,17 @@ O projeto foi criado com o objetivo de praticar **componentização**, **rotas**
 
 ## 🖼️ Demonstração
 
-![DIO Clone Preview](./src/assets/banner.svg)
+### 🏠 Tela Home
+![Tela Home](./src/assets/Home.png)
+
+### 🔐 Tela de Login
+![Tela de Login](./src/assets/Login.png)
+
+### 🧾 Tela de Cadastro
+![Tela de Cadastro](./src/assets/Cadastro.png)
+
+### 📰 Página de Feed
+![Página de Feed](./src/assets/Feed.png)
 
 ---
 
