@@ -11,6 +11,12 @@
       "name": "wanderson",
       "email": "vitor@gmail.com",
       "password": "$2b$10$okCk2JTwa4LlWEJanhY72.RxO3zSZXaMoQ73J5kaC7LsU2AGYUJeK"
+    },
+    {
+      "id": "b83c",
+      "name": "Vitor Gabriel Paz de Santana",
+      "email": "kngatuno@gmail.com",
+      "password": "$2b$10$oJcPIY5z7kVWbDx0cZob7ueRR2.U9exoHB1dEDYJN/FpGqPMuc3Zy"
     }
   ]
 }

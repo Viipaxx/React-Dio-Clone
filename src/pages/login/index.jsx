@@ -20,6 +20,7 @@ import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
 import { api } from '../../services/api';
 import bcrypt from 'bcryptjs';
+import { useEffect } from 'react';
 
 const schema = yup.object({
     email: yup.string().email('email não é válido').required('Campo obrigatório'),
@@ -56,6 +57,10 @@ const Login = () => {
             console.error("Erro ao fazer login:", error)
         }
     };
+
+        useEffect(() => {
+            document.title = 'Login | DIO Clone'
+        }, [])
 
     return (
         <div>

@@ -6,6 +6,7 @@ import { Header } from '../../components/Header';
 import bannerImage from '../../assets/banner.svg';
 
 import { Container, Title, TitleHighlight, TextContent } from './styles';
+import { useEffect } from 'react';
 
 const Home = () => {
 
@@ -14,6 +15,10 @@ const Home = () => {
     const handleClickSignIn = () => {
         navigate('/login');
     }
+
+    useEffect(() => {
+        document.title = 'Home | DIO Clone'
+    }, [])
 
     return (
         <div>

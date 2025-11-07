@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom'
 import { Button } from '../../components/Button'
 import { api } from '../../services/api';
 import bcrypt from 'bcryptjs';
+import { useEffect } from 'react';
 
 const schema = yup.object({
     name: yup.string().required('Campo obrigatório'),
@@ -29,7 +30,7 @@ const Cadastro = () => {
 
     const onSubmit = async (formData) => {
         try {
-            
+
             const { data } = await api.get(`users?email=${formData.email}`)
             if (data.length === 0) {
 
@@ -51,6 +52,10 @@ const Cadastro = () => {
             alert("Ocorreu um erro ao tentar cadastrar.");
         }
     };
+
+    useEffect(() => {
+        document.title = 'Cadastro | DIO Clone'
+    }, [])
 
     return (
         <div>

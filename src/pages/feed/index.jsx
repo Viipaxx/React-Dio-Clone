@@ -7,8 +7,14 @@ import { UserInfo } from '../../components/UserInfo';
 import bannerImage from '../../assets/banner.svg';
 
 import { Container, Column, Title, TitleHighlight } from './styles';
+import { useEffect } from 'react';
 
 const Feed = () => {
+
+    
+        useEffect(() => {
+            document.title = 'Feed | DIO Clone'
+        }, [])
 
     return (
         <div>
